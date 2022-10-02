@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital@1&display=swap"); /*font-family: 'Bebas Neue', cursive;*/
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap"); /*font-family: 'Staatliches', cursive;*/
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"); /*font-family: 'Shadows Into Light', cursive;*/
+@import url("https://fonts.googleapis.com/css2?family=Quantico&display=swap"); /*font-family: 'Quantico', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"); /*font-family: 'Amatic SC', cursive;*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+}
+
+
+.navigationbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 13vh;
+  padding: 0 25px;
+  background-color: black;
+}
+
+/*///////////////////////////////navigation pane name/////////////////////////*/
+
+.navname {
+  font-size: 34px;
+  font-family: "Shadows Into Light", cursive;
+  color: white;
+}
+
+/*///////////////////////////////Nav Items/////////////////////////*/
+
+.navitems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 118px;
+}
+
+.items {
+  text-decoration: none;
+  background-image: linear-gradient(90deg, red, purple);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: "Bebas Neue";
+  font-size: 34px;
+  letter-spacing: 1px;
+}
+
+.items:hover {
+  font-size: 34px;
+  border-bottom: 5px solid white;
+  transition: 0.2s ease-in-out;
+}
+
+.logo:hover {
+  zoom: 115%;
+}
+
+/*///////////////////////////////Front PAGE///////////////////*/
+
+@media all and (max-width:500px){
+  
+}

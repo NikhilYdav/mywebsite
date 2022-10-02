@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital@1&display=swap"); /*font-family: 'Bebas Neue', cursive;*/
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"); /*font-family: 'Shadows Into Light', cursive;*/
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"); /*font-family: 'Amatic SC', cursive;*/
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap"); /*font-family: 'Staatliches', cursive;*/
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap"); /*font-family: 'Pacifico', cursive;*/
+@import url("https://fonts.googleapis.com/css2?family=Teko&display=swap"); /*font-family: 'Teko', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"); /*font-family: 'Bungee Spice', cursive;*/
+@import url("https://fonts.googleapis.com/css2?family=Teko&display=swap"); /*font-family: 'Teko', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"); /*font-family: 'Fjalla One', sans-serif;*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  display: flex;
+  align-items:baseline;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+main {
+  padding-top: 117px;
+}
+.introbody {
+  background-image: url(/milad-fakurian-PGdW_bHDbpI-unsplash.jpg);
+  background-size: cover;
+  padding: 3rem;
+  margin: 25px;
+  background-repeat: none;
+  border: 3px solid black;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: 100%;
+}
+
+.introname {
+  font-family: "Staatliches", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introname span:nth-child(1) {
+  font-size: 90px;
+  display: flex;
+  background-image: url(/space.jpg);
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: cover;
+  color: transparent;
+  letter-spacing: 4px;
+}
+
+.introname span:nth-child(2) {
+  font-size: 73px;
+  display: flex;
+  background-image: url(/space.jpg);
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: cover;
+  color: transparent;
+  justify-content: center;
+}
+
+.intropara {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 33px;
+  font-family: "Teko", sans-serif;
+  font-size: 40px;
+  padding: 0 20px;
+  margin-bottom: 43px;
+  letter-spacing: 1px;
+  color: black;
+  margin-top: 15px;
+}
+
+.introbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+
+@media all and (max-width:500px){
+  
+  .mediaintro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .introbody{
+    
+    
+    width: 320px;
+    
+    
+  }
+  .introname span:nth-child(1){
+    font-size: 100px;
+  }
+  .introname span:nth-child(2){
+    font-size: 80px;
+  }
+  
+  .intropara{
+    font-size: 27px;
+    font-family: 'Bebas Neue', cursive;
+  }
+  
+  .introbox{
+    flex-direction: column;
+    padding: 1px 1px;
+  }
+}
+
+.intropara span {
+  font-family: "Staatliches", cursive;
+  color: rgb(255, 0, 0);
+}
+
+.mebox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50vh;
+}
+.photobox {
+  position: absolute;
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.photobox::before {
+  content: "";
+  position: absolute;
+  inset: 5px 85px;
+  background: linear-gradient(#00ccff, #d500f9);
+  width: 100px;
+  height: 61vh;
+  animation: animate 4s linear infinite;
+  transition: 0.5s;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.photobox:hover::before {
+  inset: -20px 0px;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.photobox::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border-radius: 16px;
+  background: black;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.content {
+  position: absolute;
+  inset: 30px;
+  border: 6px solid black;
+  z-index: 2;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.content img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media all and (max-width:500px){
+  .mebox{
+    
+  }
+}
+
+
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.description p{
+  background-image: linear-gradient(90deg, purple, red);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: 'Staatliches', cursive;
+  list-style: none;
+  letter-spacing: 1px;
+  font-size: 40px;
+  padding-bottom: 13px;
+  text-decoration: underline;
+}
+
+.description ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.description ul li {
+  color: #7bdcb5;
+  font-family: "Fjalla One", sans-serif;
+  list-style: none;
+  letter-spacing: 1px;
+  font-size: 25px;
+  padding-bottom: 3px;
+}
+.description ul li span1 {
+  font-size: 31px;
+  color: red;
+}
+
+.description ul li span3 {
+  font-size: 35px;
+}
+
+.description ul li img {
+  width: 13px;
+  height: 13px;
+  padding-right: 11px;
+}
+
+
+
+@media all and (max-width:500px){
+  
+  
+  
+
+  .description ul li{
+    font-size: 17px;
+    
+    
+  }
+}
+.system {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 25rem;
+  
+  flex-direction: column;
+  padding: 2rem;
+  
+}
+
+.specbox {
+  font-size: 38px;
+  font-family: "Bungee Spice", cursive;
+  padding: 11px 11px;
+  border-radius: 7px;
+  letter-spacing: 2px;
+  
+}
+
+.specifications {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  
+  padding: 1rem;
+  gap: 2.5%;
+  margin-left: 10pxx;
+}
+
+
+
+.machine {
+  background-image: url(/1155007.webp);
+  background-size: cover;
+  padding: 0.5rem;
+  border-radius: 11px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.machine ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  font-size: 23px;
+  color: white;
+}
+
+.machine ul li img {
+  height: 43px;
+  width: 43px;
+  padding: 7px;
+}
+.accessories ul li {
+  list-style: none;
+  font-family: "Bebas Neue", cursive;
+  display: flex;
+  align-items: center;
+  font-size: 23px;
+  letter-spacing: 2px;
+  color: white;
+}
+.accessories ul li img {
+  height: 43px;
+  width: 43px;
+  padding: 11px;
+}
+.accessories {
+  background-image: url(/dark-pink-purple-liquid-blur-gradient-background-free-photo.jpg);
+  background-size: cover;
+  padding: 1.5rem;
+  border-radius: 11px;
+  width: 40%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  border: 2px solid orange;
+}
+
+
+
+
+.contactmepage {
+  background-image: url(/Colorbox\ 3\ -\ Copy@1-1522x827.png);
+  padding: 1rem;
+  background-size: cover;
+  border-radius: 17px;
+  margin: 10px;
+  height: fit-content;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: row;
+  
+  max-width: 100%;
+}
+
+.socials {
+  width: fit-content;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.socials h1 {
+  font-family: "Staatliches", cursive;
+  letter-spacing: 1px;
+  font-size: 44px;
+  padding-bottom: 8px;
+}
+.socials ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 1000px;
+}
+
+.socials ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxcontactme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socials ul li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  font-size: 41px;
+  font-family: "Teko", sans-serif;
+}
+.socials ul li a:hover {
+  color: gold;
+  font-size: 50px;
+  
+}
+.socials ul li img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 11px;
+}
+
+.instagram img{
+  
+}
+
+@media all and (max-width:500px){
+  .specifications{
+    flex-direction: column;
+  }
+  
+}
+
+
+
+
+
+
+
+
